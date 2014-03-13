@@ -44,6 +44,7 @@ script:
 - cat tests/calc-show-env.sh.log ; true
 - cat ./test-suite.log ; true
 - make dist
+- make distcheck
 after_success:
 - ./build-aux/make_bin_dist.sh
 - ls -l ./bin/
