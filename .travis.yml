@@ -11,6 +11,7 @@ env:
 compiler:
   - clang
 before_install:
+<<<<<<< HEAD
   - brew update
   - brew install help2man
   - brew install md5sha1sum
@@ -18,9 +19,6 @@ before_install:
   - brew install xz
   - brew install lcov
   - brew install gettext
-  - wget ftp://ftp.gnu.org/gnu/sed/sed-4.2.2.tar.bz2
-  - tar -xjf sed-4.2.2.tar.bz2
-  - "( cd sed-4.2.2 ; ./configure && make && sudo make install )"
   - which automake
   - automake --version
   - which autoconf
